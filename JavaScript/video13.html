@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>video11</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>3 Must known methods for Arrays in JavaScript</p>
+        </div>
+        <p id="ptag_stye">
+            In this video we are going to learn the shift(); method delet the index[0] 
+            value or shift the value 
+            Unshift (); method inserting one more value starting of the array..  
+            Pop(); its removes the last element from the Array
+            Puh(); method is going to push / add  the element in end of the array
+            
+            
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+        src="https://www.youtube.com/embed/cSdrCK6g7GE?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP"
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+         gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <div>
+            <pre style="text-align: left; font-size:25px;">
+                const numbers = ['one', 'two', 'three', ' four', 'five', 'six'];
+// numbers[1] = 'SOMETHING';
+// console.log(numbers);
+
+// start
+// numbers.shift();
+//console.log(numbers); // wn u use shift remove [0] value
+// [ 'two', 'three', ' four', 'five', 'six' ]
+// console.log(numbers.shift());// [ 'one', 'two', 'three', ' four', 'five', 'six' ]
+//                              one
+// numbers.unshift("Something");
+// console.log(numbers); //[ 'Something', 'one', 'two', 'three', ' four', 'five', 'six' ]
+// end 
+//numbers.pop();
+//console.log(numbers);// [ 'one', 'two', 'three', ' four', 'five' ]
+//console.log('the deleted Element is: ' + numbers.pop() );
+// [ 'one', 'two', 'three', ' four', 'five' ]
+// the deleted Element is: 
+// numbers.push("seven");
+// console.log(numbers);
+//[
+  //  'one',   'two',
+   // 'three', ' four',
+    //'five',  'six',
+    //'seven'
+ // ]
+
+
+ numbers.splice(2,1, 'Something');
+ console.log(numbers); 
+ // [ 'one', 'two', 'Something', ' four', 'five', 'six' ]
+
+
+                    </pre>
+                  </div>
+    </div>
+</body>
+
+</html>

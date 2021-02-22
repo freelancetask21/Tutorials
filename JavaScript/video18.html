@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>video18</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Foreach loop in #javaScript </p>
+        </div>
+        <p id="ptag_stye">
+            So far we are going to learn, using those knowledge and develop a Appication
+            using function , and Create a a student Examination marks grading
+            and his percentage.
+            these Application.
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+     width="435" height="240" src="https://www.youtube.com/embed/upP06o5ZPls?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+                console.log(days[0]);
+                //let sayHello = function(v,i){
+                  //  console.log("Greeting message for user",v,i);
+                //}
+                //days.forEach(sayHello);
+                //Greeting message for user mon 0
+                //Greeting message for user tue 1
+                //Greeting message for user wed 2
+                //Greeting message for user thu 3
+                //Greeting message for user fri 4
+                //Greeting message for user sat 5
+                days.forEach( function(){
+                    console.log( "Greeting message from user");
+                });
+                //Greeting message for user
+                //Greeting message for user
+                //Greeting message for user
+                //Greeting message for user
+                //Greeting message for user
+                //Greeting message for user
+                days.forEach( function(lime){
+                    console.log( lime);
+                });
+                //mon
+                //mon
+                //tue
+                //wed
+                //thu
+                //fri
+                //sat
+                days.forEach( function(day, index){
+                    console.log(`Start with ${index+1} ---> ${day}`);
+                });
+                //Start with 1 ---> mon
+                //Start with 2 ---> tue
+                //Start with 3 ---> wed
+                //Start with 4 ---> thu
+                //Start with 5 ---> fri
+                //Start with 6 ---> sat                
+                </pre>
+        </div>
+    </div>
+</body>
+
+</html>

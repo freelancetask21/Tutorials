@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>video7</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>If and Else Statement in #JavaScript </p>
+        </div>
+        <p id="ptag_stye">Very often when you write code, you want to perform different actions for different decisions.
+
+            You can use conditional statements in your code to do this.
+
+            In JavaScript we have the following conditional statements:
+            <ul style ="width:50%; margin: 0 auto;  font-size: 25px;" >
+
+            <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+           <li> Use else to specify a block of code to be executed, if the same condition is false</li>
+            <li>Use else if to specify a new condition to test, if the first condition is false</li>
+            <li>Use switch to specify many alternative blocks of code to be executed</li>
+            </ul>
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+            src="https://www.youtube.com/embed/vF4b1KFfA3A?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                    if (false) {
+
+                        console.log("Iam inside the block!");//true display: Iam inside the block!
+                        console.log("Iam still  inside the block!"); //true display: // Iam still inside the block!
+                    }
+                    
+                    else if (false) {
+                        console.log("Hey am in  Else if block!");//true display: Hey am in  Else if block!
+                    }
+                    
+                    else {
+                        console.log("I am finally stay in Else block!"); // false  display : I am finally stay in Else block!
+                    }
+                    //..........................................
+                    // verification for it user, Teacher, other
+                    var Whoishere = "xyz";
+                    if (Whoishere == "User") {
+                        console.log("Greeting Message fro User!"); // User dispay: Greeting Message fro User! 
+                        console.log("Allow access to all Coursess!");// User dispay: Allow access to all Coursess!
+                    }
+                    else if (Whoishere == "Teacher") {
+                        console.log("Greeting Message from Teacher!");// dispay :Greeting Message from Teacher!
+                        console.log("Allow access to all Coursess!");// display: Allow access to all Coursess!
+                    }
+                    else{
+                        console.log("MESSAGE: please verified your Email!"); // MESSAGE: please verified your Email!
+                        console.log("Send an user an email for  verifiaction !");// Send an user an email for  verifiaction !
+                    }
+                    var studentMarks="100"
+                    if( studentMarks>="10"){
+                        console.log(" Student got AMAZING marks in Exams!");
+                    }
+                    else if(studentMarks=="5"){
+                        console.log(" Student got GOOD marks in Exams!");
+                    }
+                    else if(studentMarks=="3"){
+                        console.log("Student got POOR marks in Exams!");
+                    }
+                    else
+                    {console.log(" Student FAIL  marks in Exams!");}
+                        
+                  </pre>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+
+
+
+
+</html>

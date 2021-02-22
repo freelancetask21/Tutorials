@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>video17</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p> Fun assignment to create function in javaScript</p>
+        </div>
+        <p id="ptag_stye">
+            So far we are going to learn, using those knowledge and develop a Appication
+            using function , and Create a a student Examination marks grading
+            and his percentage.
+            these Application.
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+            src="https://www.youtube.com/embed/xgSHYb85tLQ?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                let Getmygrade = function(currentmarks,totalmarks){
+                    let  percentage = currentmarks/totalmarks*100;
+                 
+                   let mygrade = ' '
+                     if(percentage>=90){
+                         mygrade = 'A';
+                     }
+                 
+                     else if(percentage>=80)
+                     {
+                         mygrade = 'B';
+                     }
+                     else if(percentage>=70)
+                     {
+                         mygrade = 'C';
+                     }
+                     else if(percentage>=60)
+                     {
+                         mygrade = 'D';
+                     }
+                     else
+                     {
+                        mygrade ='Fail'
+                 
+                     }
+                     return ` your Grade is: ${mygrade} and your percentage is: ${percentage}`
+                 }
+                 let yourResult =  Getmygrade(98,100);
+                 console.log(yourResult);
+                 //  your Grade is: Fail and your percentage is: 34 
+                 // your Grade is: A and your percentage is: 98
+                </pre>
+        </div>
+    </div>
+</body>
+
+</html>

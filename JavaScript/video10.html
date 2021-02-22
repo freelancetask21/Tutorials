@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>video9</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Kings Territory Problem in JavaScript </p>
+        </div>
+        <p id="ptag_stye">
+            In this video we are going to undestand what is scope, goabal, local variable .
+            A variable declared outside a function, becomes GLOBAL.
+            A variable declared Inside a function, becomes LOCAL. 
+            Scope determines the accessibility (visibility) of these variables.
+
+            
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+            src="https://www.youtube.com/embed/4-wsjJZg0yU?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                    // kings territory problem
+                    //let king ="thulasi";
+                    if(true)
+                    {
+                    // let king = "keasava";
+                    if(true){
+                    let king = " Rama"; // keasava // Rama
+                    console.log(king); // Rama // thulasi
+                    }
+                    }
+        
+                    if(true){
+        
+                    console.log("I am second part : " + king);
+                    // I am second part thulasi
+                    //I am second part : Rama
+                      </pre>
+
+        </div>
+    </div>
+</body>
+
+</html>

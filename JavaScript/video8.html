@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>video8</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Logical operators in #JavaScript</p>
+        </div>
+        <p id="ptag_stye">Logical operators are used to determine the logic between variables or values
+            <ul style="width:30%; margin:0 auto; font-size:25px; ">
+                <li>Logical operators</li>
+                <li>AND – Both side need to be true</li>
+                <li>|| - Operators one side need to be true</li>
+                <li>! – not operator or reverse operator</li>
+
+            </ul>
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+            src="https://www.youtube.com/embed/M7Tzdjn8GNo?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0"
+            allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                let isVerified = false;
+                let isLogged = true;
+                let haspaymentToken = true;
+                let isGuest = true;
+                if (isVerified && isLogged && haspaymentToken) {
+                    console.log("Greeting Message to User");
+                    // (all casess are true in if block )Greeting Message to User
+                   console.log("Grant acess to paid course "); 
+                   // Grant acess to paid course
+                }
+                
+                else if (isVerified || isGuest) {
+                    console.log("Allow free previews"); // Allow free previews
+                  
+                }
+                else {
+                    console.log("MESSAGE:please contact Admin")// please contact Admin
+                
+                }
+                  </pre>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

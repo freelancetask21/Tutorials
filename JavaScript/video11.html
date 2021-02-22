@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>video11</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Arrays and Template literals in javaScript </p>
+        </div>
+        <p id="ptag_stye">
+            JavaScript arrays are used to store multiple values in a single variable.
+           <b> An array is a special variable, which can hold more than 
+            one value at a time.</b>
+            An array can hold many values under a single name, 
+            and you can access the values by referring to an index number.
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+        src="https://www.youtube.com/embed/bD52VbXafqU?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                // data type: Array
+                const superHeros = ["Iron man","Spiderman","Captain of America ", "thulasiram"]
+                console.log(superHeros);  //[ 'Iron man', 'Spiderman', 'Captain of America ' ]
+                console.log(superHeros[0]); // Iron man
+                console.log(superHeros[2]); // Captain of America
+                console.log(superHeros[3]); // undefined
+                console.log(superHeros[-3]); //  undefined
+                // the programme its trick to find the last value so avoid this problem ...
+                //...we have to find the length of the Array  
+                console.log(superHeros.length); // 3 then our Array is holding 3 values ..
+                console.log(superHeros[superHeros.length - 1]); // [ 2 ]
+                console.log(superHeros[superHeros.length - 1]); // Captain of America
+                console.log(superHeros[superHeros.length - 1]);
+                console.log(superHeros[superHeros.length - 1]);
+                console.log('We have ${superHeros.length} Superheros');
+                console.log(`We have ${superHeros.length} Superheros`);// We have 4 Superheros
+                console.log(`We have ${(superHeros[superHeros.length - 1])} Superhero`);
+                //We have thulasiram Superhero
+            </pre>
+
+        </div>
+    </div>
+</body>
+
+</html>

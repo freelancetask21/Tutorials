@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>video16</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p> Our first todo application in JavaScript - Trello</p>
+        </div>
+        <p id="ptag_stye">
+            So far we are going  to learn, using those knowledge and develop a Appication
+            using forEach() function , and for loop we are going to develop 
+            these Application.
+    </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+        src="https://www.youtube.com/embed/kIWl2-3848A?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                const mytodos = [];
+mytodos.push(" Hey guys welcome to all.");
+mytodos.push(" My youtube chennal..");
+mytodos.push(" my channeal name is thulasitechji youtube chennal ");
+mytodos.forEach(function(ido, index){
+console.log(`your task no: ${index+1} + is :${ido}  `);
+
+});
+
+for( let  index = mytodos.length-1; index>=0; index-- ){
+    console.log( mytodos[index]);;
+
+
+}
+//your task no: 1 + is : Hey guys welcome to all.
+//your task no: 2 + is : My youtube chennal..
+//your task no: 3 + is : my channeal name is thulasitechji youtube chennal
+ //my channeal name is thulasitechji youtube chennal
+ //My youtube chennal..
+ //Hey guys welcome to all.
+
+                </pre>
+        </div>
+    </div>
+</body>
+
+</html>
