@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>video20</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Trello v2 in #javaScript </p>
+        </div>
+        <p id="ptag_stye">
+            A car has properties like weight and color, and methods like start and stop.<br>
+            properties: 	
+            car.name = Fiat
+            
+            car.model = 500
+            
+            car.weight = 850kg
+            
+            car.color = white
+            methods:
+            car.start()
+
+            car.drive()
+
+            car.brake()
+
+            car.stop()
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+        src="https://www.youtube.com/embed/1Wsbu4Qh_6E?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                let todo ={
+                    day:'Monday',
+                    meeting: 0,
+                    meetDone:0,
+                }
+                
+                let addMeating = function(todo , meet=0){
+                
+                    todo.meeting = todo.meeting  + meet;
+                
+                }
+                let meetDone = function(todo, meet=0){
+                    todo.meetDone = meetDone - meet;
+                }
+                let resetDay = function(todo){
+                
+                todo.meeting = 0;
+                todo.meetDone = 0;
+                
+                } 
+                let getsummeryofDay = function(todo){
+                    let meetLeft = todo.meeting - todo.meetDone;
+                    return `You have ${meetLeft} meetings left`
+                }
+                addMeating(todo, 4);
+                addMeating(todo, 2);
+                addMeating(todo, 5);
+                console.log(todo);
+                console.log(getsummeryofDay(todo));
+                //{ day: 'Monday', meeting: 11, meetDone: 0 }
+                //You have 11 meetings left
+                             
+                </pre>
+        </div>
+    </div>
+</body>
+
+</html>
