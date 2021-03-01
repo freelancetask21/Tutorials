@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>video24</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Visual Studio in JavaScript. </p>
+        </div>
+        <p id="ptag_stye">
+            stirng comaprison == we get true , object comparision(===) we gat false  
+            Double equals (==) is a comparison operator, 
+            which transforms the operands having the same type before comparison.
+            === (Triple equals) is a strict equality comparison operator in JavaScript, 
+            which returns false for the values which are not of a similar type. 
+            This operator performs type casting for equality. 
+            If we compare 2 with "2" using ===, then it will return a false value.
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+         src="https://www.youtube.com/embed/a0S1iG3TgP0?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" 
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                    //console.log(`` === ``) ; // true
+                    //let myvar = '';
+                    //let myvarTwo = '';
+                    //console.log(myvar == myvarTwo);  // true , string comaparission ...
+                    //console.log(myvar === myvarTwo);  // true
+                    //let myvar = {};
+                    //let myvarTwo = {};// object comparision 
+                    //console.log(myvar == myvarTwo);// here u getting false...
+                    //console.log(myvar === myvarTwo); // false...
+                    
+                    let myvar = {};
+                    let myvarTwo =myvar;
+                    console.log(myvar == myvarTwo); // True myvar, myvarTwo are ref same object.
+                    console.log({}==={})// fase...
+                    
+                    
+             </pre>
+        </div>
+    </div>
+</body>
+
+</html>
