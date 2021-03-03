@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>video25</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Search from Array of Objects in JavaScript. </p>
+        </div>
+        <p id="ptag_stye">
+            stirng comaprison == we get true , object comparision(===) we gat false  
+            Double equals (==) is a comparison operator, 
+            which transforms the operands having the same type before comparison.
+            === (Triple equals) is a strict equality comparison operator in JavaScript, 
+            which returns false for the values which are not of a similar type. 
+            This operator performs type casting for equality. 
+            If we compare 2 with "2" using ===, then it will return a false value.
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+         src="https://www.youtube.com/embed/US63Q6AL0GI?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP"
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen></iframe>
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                //const Mytodos = ['BuyBread', 'Go to Gym', 'Record Youtube videos '];
+//console.log(Mytodos.indexOf('Buybread')); // -1, whenever object not fint in array
+//..which return 0, if match in this case bello get index value 0 let try that one
+//console.log(Mytodos.indexOf('BuyBread')); //0 
+//const Mynewtodos = [
+
+  //  {title: 'BuyBread',
+    // isDone: false, 
+    
+   // },
+   // {title : 'Go to Gym',
+   // isDone: false,
+   // },
+    //{title: 'Record Youtube videos',
+    //isDone: true
+    //}]; 
+    //    const index = Mynewtodos.findIndex(function(todos, index1){
+        
+    //console.log( todos)
+      //  return todos.title === 'Go to Gym'
+   // })
+    //console.log(index1); // 1
+
+    const newTodos =[
+                    {
+                    title: 'Buy Bread', 
+                    isDone : 'false',},
+                    {
+                      title : 'Go to Gym',
+                      isDone : false,
+                    },
+                    {
+                      title : 'Record youtube videos',
+                      isDone : false,
+                    }];
+              
+  // const findtodo = function(Mytodos,title)
+   //{
+     // const index = Mytodos.findIndex(function(todo, index ){
+      //  return todo.title.toLowerCase() === title.toLowerCase()
+      
+     // } )
+       // console.log(index);
+       //return Mytodos[index]
+//}
+//let printMe = findtodo(newTodos,'Record youtube videos' )
+//console.log(printMe);   
+
+const findtodo = function(mytodos, title){
+
+ const titleReturned = mytodos.find(function(todo, index ){
+      return todo.title.toLowerCase() === title.toLowerCase()
+})
+  return titleReturned
+}
+let printMe = findtodo(newTodos,'Go to Gym' )
+console.log(printMe);
+
+//{ title: 'Go to Gym', isDone: false }
+                    
+                    
+             </pre>
+        </div>
+    </div>
+</body>
+
+</html>
