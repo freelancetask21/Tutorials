@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>video28</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Arrow function and this keyward in JavaScript. </p>
+        </div>
+        <p id="ptag_stye">
+            Arrow functions were introduced in ES6.
+
+            Arrow functions allow us to write shorter function syntax
+            It gets shorter! If the function has only one statement,
+            and the statement returns a value,
+            you can remove the brackets and the return keyword:
+            It has different values depending on where it is used:
+
+            In a method, this refers to the owner object.
+            Alone, this refers to the global object.
+            In a function, this refers to the global object.
+            In a function, in strict mode, this is undefined.
+            In an event, this refers to the element that received the eve
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+            src="https://www.youtube.com/embed/RGUAZbXTtP8?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                    const cnanon = {
+
+                        price : 700,
+                        weight : 200,
+                       mydeofcanon : function(){
+                    
+                        return ` this is cannon camers ${this.price} `
+                    
+                       }
+                       
+                    }
+                    console.log(cnanon.mydeofcanon());
+                    //this is cannon camers 700, in this paricular use case we should not use 
+                    // the arrow function ...within object we dont use the arrow function 
+                    // arrow function we cant use in methods and constructor ...
+
+
+
+
+                    
+             </pre>
+        </div>
+    </div>
+</body>
+
+</html>

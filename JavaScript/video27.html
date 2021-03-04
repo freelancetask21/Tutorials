@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title>video27</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Arrow functions basics in JavaScript. </p>
+        </div>
+        <p id="ptag_stye">
+            Arrow functions were introduced in ES6.
+
+            Arrow functions allow us to write shorter function syntax
+            It gets shorter! If the function has only one statement,
+            and the statement returns a value,
+            you can remove the brackets and the return keyword:
+        </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+            src="https://www.youtube.com/embed/RGUAZbXTtP8?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+
+// this is normal function declaration
+// const sayHello = function(name){
+
+// return "Hey there is" + name + " ! "
+// } 
+
+// console.log(sayHello(' tuasiram')); //Hey there is tuasiram !
+
+// Arrow function declaration 
+// const sayHello1 = (name) => {
+
+// return " Welcome to my video programming coure to all" + name + " !";
+// }
+// console.log(sayHello1('janam'));
+
+// Welcome to my video programming coure to alljanam !
+// const sayHello2 = (name) => {
+
+// return ` Welcome to my video programming coure to all + ${name} +  !`;
+// }
+// console.log(sayHello2('janam'));
+
+// Aerrow function represent another way
+// const sayHello = (name)=> ` Hey there is  ${name} `
+// console.log('thulasiram'); // thulasiram
+
+const todos = [{
+    title: 'Buy Bread',
+    isDone: true,
+},
+{
+    title: 'Go to Gym',
+    isDone: true,
+},
+
+{
+    title: 'Record youtube videos',
+    isDone: false
+}]
+// here we use the Call back function
+// we can create function which is going to true 
+
+const thingsDone = todos.filter((todo) => {
+
+    return todo.isDone === true;
+})
+
+console.log(thingsDone);
+
+//[
+   // { title: 'Buy Bread', isDone: true },
+  // { title: 'Go to Gym', isDone: true }
+  // ]
+        Assignment task
+        const todos =[{
+            title : "Ravi wakeup",
+            isDone : true,
+        },
+        {
+          title : "Get ready to movie shot",
+          isDone : false,
+        
+             },
+             { 
+                  title : "go to college",
+                  isDone : false,
+        },
+        {
+            title : "playing games in play Ground",
+            isDone : true,
+        },
+        {
+            title : "return back to home ",
+            isDone : false, 
+        },{
+            title : "Go to friend room",
+            isDone : true,
+        }]
+        
+        const myisDonefalse = todos.filter((todo) =>{
+         return todo.isDone === false;
+        
+        })
+        console.log(myisDonefalse);
+        //{ title: 'Get ready to movie shot', isDone: false },
+        //{ title: 'go to college', isDone: false },
+        //{ title: 'return back to home ', isDone: false }
+        //] 
+                    
+             </pre>
+        </div>
+    </div>
+</body>
+
+</html>
