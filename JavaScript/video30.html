@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <title>video30</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p> Maps and for of loop in JavaScript. </p>
+        </div>
+        <p id="ptag_stye">
+            Map is something which can be iteratable so what is iteratable? iteratable
+            something you can iterate like loop. foreach() is the regular function or 
+            callback function.
+            The Map object holds key-value pairs and remembers the original insertion order of the keys. 
+            Any value (both objects and primitive values) may be used as either a key or a value.
+
+    </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+         src="https://www.youtube.com/embed/wmQ_JdU8NuQ?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+         gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+                var thulasi = {
+
+                    name: "My name is thulasi",
+                    age: 32,
+                    isActive: true
+                    }
+                    
+                    var keasavaji={
+                    
+                        name: "I  am the kesavaji",
+                        age: 34,
+                        isActive: true
+                    
+                    }
+                     var sam ={
+                    
+                        name: "I am sam",
+                        age : 24,
+                        isActive:false
+                     }
+                    
+                    let users = new Map()
+                    users.set("kurakalava", thulasi)
+                    
+                    users.set("kesavaji", keasavaji)
+                    
+                    users.set("sam", sam)
+                    console.log(users);
+                    
+                    // Out put: Map {
+                        //'kurakalava' => { name: 'My name is thulasi', age: 32, isActive: true },
+                     //'kesavaji' => { name: 'I  am the kesavaji', age: 34, isActive: true },
+                        //'sam' => { name: 'I am sam', age: 24, isActive: false }
+                      //}
+                    
+                     // console.log(users.size);// 3
+                      //console.log(users.get("sam")); 
+                      // { name: 'I am sam', age: 24, isActive: false }
+                      //console.log(users.keys());
+                      // [Map Iterator] { 'kurakalava', 'kesavaji', 'sam' }
+                      //console.log(users.values());
+                      // out Put: [Map Iterator] {
+                      //{ name: 'My name is thulasi', age: 32, isActive: true },
+                      //{ name: 'I  am the kesavaji', age: 34, isActive: true },
+                      //{ name: 'I am sam', age: 24, isActive: false }
+                    //}
+                    //for (const key of users.keys() ){
+                       // console.log(key);
+                    //}
+                    //.... Out put
+                    //kurakalava
+                    //kesavaji
+                    //samt 
+                    //for( const value of users.values()){
+                    //console.log(value.name);
+                    
+                    //}
+                    //......out put........
+                    //My name is thulasi
+                    //I  am the kesavaji
+                    //I am sam
+                    
+                    for (const [key, values] of users.entries() ){
+                      //  console.log( key +' = '+ values.name);
+                    }
+                    
+                    users.forEach((value,key)=>
+                    console.log( key +' = '+ value.name))
+                    //...............Out Put.......
+                    //kurakalava = My name is thulasi
+                    //kesavaji = I  am the kesavaji
+                    //sam = I am sam
+                    
+                    var arrofArr = [['one', 1], ['two',2], ['three', 3]]
+                    var newMap = new Map(arrofArr)
+                    console.log(newMap);
+                    //Map { 'one' => 1, 'two' => 2, 'three' => 3 }
+                    
+             </pre>
+        </div>
+    </div>
+</body>
+
+</html>
