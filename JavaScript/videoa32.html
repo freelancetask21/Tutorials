@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>video32</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+tag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p> Changing all text using JavaScript. </p>
+        </div>
+        <p id="ptag_stye">
+                In this video we are going to learn the how we can change the document elemnt by using external 
+                using the JavaScript file. Learn some more commands of inbuilt js...
+ </p>
+        <iframe style="margin:0 auto;" width="435" height="240"
+         src="https://www.youtube.com/embed/irvE-pUt-uU?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+            <pre style="text-align: left; font-size:25px;">
+               
+               
+       ....................js file.................
+                //const Mypelements =  document.querySelector('p')
+//console.log(Mypelements);
+//Mypelements.textContent = 'I  am being the text using java scriopt .. '
+const Mypelements = document.querySelectorAll('p');
+Mypelements.forEach( function(p){
+p.textContent ="am changing the text using js file "
+p.remove() 
+
+
+})
+ //.................out put......... 
+//am changing the text using js file
+
+//am changing the text using js file
+
+//am changing the text using js file
+
+//am changing the text using js file
+
+//am changing the text using js file
+
+//am changing the text using js file
+
+
+ //.................out put......... 
+ //p.remove() 
+ //when you use the these command remove the above out put
+
+          ............html file .............
+          &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+          &lt;p&gt;This is my new file...please of p tag&lt;/p&gt;
+         &lt;p&gt;check and verified this extention is very useful for all users . &lt;/p&gt;
+         &lt;p&gt;check and verified this extention is very useful for all indan users. &lt;/p&gt;
+         &lt;p&gt;check and verified this extention is very useful for all world users . &lt;/p&gt;
+         &lt;p&gt;check and verified this extention is very useful for all Universal users . &lt;/p&gt;
+         &lt;p&gt;check and verified this extention is very useful for all state users . &lt;/p&gt;
+    &lt;script src = "video32.js"&gt; &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ 
+               
+
+
+
+            </pre>
+        </div>
+    </div>
+</body>
+</html>
