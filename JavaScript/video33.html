@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>video33</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Form validation and simple Application in JavaScript. </p>
+        </div>
+        <p id="ptag_stye">
+            In this video we are going to learn how to create a simple JavaScript application
+            using fundamentals of JavaScript events.
+        </p>
+
+
+        <iframe style="margin:0 auto;" width="435" height="240"
+            src="https://www.youtube.com/embed/Wok0mlZxuAk?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <input type="text" name="kesavaji" id="myform" placeholder="search here">
+        
+        <script src = "validation.js"></script>
+
+        <button onclick="myValidation()">Click Me</button>
+
+
+        <div>
+
+            <pre style="text-align: left; font-size:25px;">
+                //..........video31.js......
+
+                    document.querySelector('#myform').addEventListener('change', () => {
+                        console.log(event.target.value);
+                    })
+                    document.querySelector('#myform').addEventListener('click', () => {
+                        console.log(event.target.value, 'click');
+                    })
+                    document.querySelector('#myform').addEventListener('mousedown', () => {
+                        console.log(event.target.value,'mousedown');
+                    })
+                    document.querySelector('#myform').addEventListener('keydown', () => {
+                        console.log(event.target.value, "keydown");
+                    })
+                    
+                    //document.querySelector()addEventListener('click', function (event) {
+                      //  alert('Element clicked through function!');
+                     // });
+//............
+unction myValidation(){
+
+    let myvalue = document.getElementById("myform").value;
+
+
+    if(isNaN(myvalue) || myvalue<1 || myvalue>20){
+        console.log("is not a valid number..!")
+    }
+    else{
+        console.log("This input is OK");
+    }
+}
+
+
+
+
+
+
+
+             </pre>
+        </div>
+    </div>
+</body>
+
+</html>

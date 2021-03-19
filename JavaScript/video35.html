@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>video35</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Form validation and simple Application in JavaScript. </p>
+        </div>
+        <p id="ptag_stye">
+            In this video we are going to learn how to create a simple JavaScript application
+            using fundamentals of JavaScript events.
+        </p>
+
+
+        <iframe style="margin:0 auto;" width="435" height="240"
+         src="https://www.youtube.com/embed/JaXmlk9BHzE?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <input type="text" name="kesavaji" id="myform" placeholder="search here">
+        
+        
+        <button onclick="myValidation()">Click Me</button>
+        <form class="myform">
+            <input type="text" name="text1" placeholder="Username">
+            <input type="text" name="text2" placeholder="passward">
+            <button type="submit">Submit</button>
+        </form>
+
+        <form class="myform2">
+            <input type="text" name="name1"placeholder="Username">
+            <input type="text" name="pwd" placeholder="passward">
+            <input type="text" name="email" placeholder="Emailid">
+            <button type="submit">submit</button>
+
+        </form>
+        
+        <script src = "validation2.js"></script>
+
+        <div>
+
+            <pre style="text-align: left; font-size:25px;">
+               //...........vaidation2.js.......
+               // form vaidation next video something 
+               document.querySelector(".myform").addEventListener('submit', (event)=>{
+                   console.log(event.target.text1.value);
+                   console.log(event.target.text2.value);
+                   alert('Hello wecome to my page');
+                   //event.preventDefault();
+                   event.target.text1.value = '';
+                   event.target.text2.value = '';
+                   
+               })
+               
+               document.querySelector('.myform2').addEventListener('submit',(event)=>{
+               
+                   console.log(event.target.name1.value);
+                   console.log(event.target.pwd.value);
+                   console.log(event.target.email.value);
+                //   event.target.name1.value = "";
+                  // event.target.pwd.value = "";
+                  // event.target.email.value = "";
+                   alert('Hello wecome to my page');
+               })
+
+
+
+
+
+
+
+             </pre>
+        </div>
+    </div>
+</body>
+
+</html>
