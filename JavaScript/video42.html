@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>video35</title>
+    <style>
+        .headingstyle {
+            background-image: linear-gradient(rgb(152, 139, 213), rgb(104, 91, 175));
+            padding: 35px;
+            font-size: 54px;
+            color: cornsilk;
+            text-align: center;
+        }
+
+        #ptag_stye {
+            font-size: 25px;
+            color: cornsilk;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        body {
+            background-color: brown;
+        }
+
+        .pre_stye {
+            color: cornsilk;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="headingstyle">
+            <p>Parsing JSON and stringify in JavaScript. </p>
+        </div>
+        <p id="ptag_stye">
+            In this video we are going to learn The JSON.stringify() method converts a JavaScript
+            object or value to aJSON string, optionally replacing values if a replacer function
+            is specified oroptionally including only the specified properties if
+            a replacer array is specified.A String or Number object that's used to insert white space into the output
+            JSON string for readability purposes.If this is a Number, it indicates
+            the number of space characters to use as white space;
+            this number is capped at 10 (if it is greater, the value is just 10).
+            Values less than 1 indicate that no space should be used.
+        </p>
+
+
+        <iframe style="margin:0 auto;" width="435" height="240"
+            src="https://www.youtube.com/embed/2NsfIgUBxDI?list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+        <div>
+
+            <pre style="text-align: left; font-size:25px;" class="pre_stye">
+
+              ............video42.js file code.................. 
+              
+                onst  student = {
+
+                    name : 'srivasthava',
+                    age : 32,
+                    isactive : true
+                }
+                // construct these object into a string to be stored in Local veriable......
+                  const studentObjToString = JSON.stringify(student);
+                  console.log(typeof(studentObjToString)) ;
+                
+                  //....... Out Put of the above line ......
+                  // string
+                 //window.localStorage.setItem('student', studentObjToString);
+                 const JSONstudentToObj = JSON.parse(studentObjToString);
+                 console.log(typeof(JSONstudentToObj));
+                 //.....out Put.....
+                 // for the above code object
+                 console.log(JSONstudentToObj.name);
+                 console.log(JSONstudentToObj.age);
+                 //..... Out Put for the immediate above code....... 
+                 
+                 srivasthava
+                   32
+
+             </pre>
+        </div>
+        <script src="video42.js"></script>
+    </div>
+</body>
+
+</html>
