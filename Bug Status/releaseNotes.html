@@ -1,26 +1,41 @@
 <html>
-    <head>
-        
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <style>
-            td, th{
 
-                width: 6%;
-                padding: 10px 2px;
-                text-align: center;
-            }
+<head>
 
-        </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        td,
+        th {
+
+            width: 6%;
+            padding: 10px 2px;
+            text-align: center;
+        }
+    </style>
 
 
 
-    </head>
+</head>
 
-<body>
+<body style="padding: 50px;">
 
     <h3>Release</h3>
     <p>Release notes </p>
+    <div>
+        <div class="input-group" style="max-width: 10%;">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <br>
     <table class="table table-striped">
         <tr>
             <th>Version</th>
@@ -34,17 +49,28 @@
         <tr>
             <td>Version3.0</td>
             <td> In Progressed</td>
-            <td>...</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"
+                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+            </td>
             <td>11/06/17</td>
             <td>...</td>
             <td>...</td>
             <td>....</td>
         </tr>
-        
+
         <tr>
             <td>Version 2.0</td>
-            <td> Un  released</td>
-            <td>...</td>
+            <td> Un released</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
+                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
             <td>08/22/16</td>
             <td>...</td>
             <td>...</td>
@@ -53,7 +79,12 @@
         <tr>
             <td>Version 1.8</td>
             <td> Release</td>
-            <td>...</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
             <td>01/05/15</td>
             <td>...</td>
             <td>...</td>
@@ -62,20 +93,25 @@
         <tr>
             <td>Version 1.5</td>
             <td> Released</td>
-            <td>...</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
             <td>06/12/16</td>
             <td>...</td>
             <td>Awesome</td>
             <td>...</td>
         </tr>
         <tr>
-            <td colspan="3"><input type="text" placeholder="Version name"></td>
-            <td colspan="1"><input type="text" placeholder="Start Date"></td>
-            <td colspan="1"><input type="text" placeholder="Release date"></td>
-            <td colspan="1"><input type="text" placeholder="Description"></td>
-            <td colspan="1"><input type="button" value="Add"></td>
-            
-           
+            <td colspan="3"><input type="text" placeholder="Version name" class="form-control"></td>
+            <td colspan="1"><input type="text" placeholder="Start Date" class="form-control"></td>
+            <td colspan="1"><input type="text" placeholder="Release date" class="form-control"></td>
+            <td colspan="1"><input type="text" placeholder="Description" class="form-control"></td>
+            <td colspan="1"><button type="button" class="btn btn-primary">Add</button></td>
+
+
         </tr>
 
 
