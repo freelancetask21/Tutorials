@@ -3,17 +3,18 @@
 <head>
     <style>
         .colum {
-            width: 15%;
+            width: 17%;
             margin: 1%;
             padding: 1%;
             display: inline-block;
             min-height: 40%;
+            vertical-align: top;
         }
 
         .number_Style {
             border: 1px solid;
             padding: 2px;
-            border-radius: 15px;
+            border-radius: 7px 7px;
         }
 
         .button_Color {
@@ -24,10 +25,19 @@
         .common_div {
             margin-top: 15px;
         }
+ 
 
-        .new_Task {
-            padding-top: 25px;
+        .back_Epic {
+            opacity: 0.25;
+            font-size: 11px;
         }
+
+        .new_task {
+            opacity: 0.25;
+            padding: 25px 25px;
+
+        }
+        .srumpoint{opacity: 0.25;}
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -49,29 +59,49 @@
         </div>
 
         <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
-            <span>Backlog</span><br>
-            <span>Fix routing problems</span>
-            <span><span class="glyphicon glyphicon-flag"></span></span>
-            <span>8/22/19 - 8/27/19</span>
+            <span class="back_Epic">Backlog</span><br>
+            <span>Fix routing problems</span><br>
+            <span class="glyphicon glyphicon-flag" style="color: aqua;"></span>
+            <span>8/22/19 - <span style="color: red;">8/27/19</span></span>
             <span><span class="glyphicon glyphicon-hourglass"></span> 16h </span><br>
-            <span>Scrump Points:</span>
+            <span class="srumpoint">Scrump Points:</span>
             <button type="button" class="button_Color">3</button>
 
         </div>
 
         <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
-            <span>Epic 1</span><br>
+            <span class="back_Epic">Epic 1</span><br>
             <span>Project Meating</span>
-            <span>Scrump Points:</span>
+            <span class="srumpoint">Scrump Points:</span>
             <button type="button" class="button_Color">3</button>
 
         </div>
 
+        <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
+            <span class="back_Epic">Epic 1</span><br>
+            <span>Document build plans</span>
+            <span class="srumpoint">Scrump Points:</span>
+            <button type="button" class="button_Color">1</button>
 
+        </div>
+        <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
+            <span class="back_Epic">Epic 2</span><br>
+            <span>New billing page</span><br>
+            <span class="glyphicon glyphicon-flag" style="color: aqua;"></span>
+            <span> 8/16/19 - <span style="color:red;"> 8/22/19</span></span>
+            <span><span class="glyphicon glyphicon-hourglass"></span> 8h </span><br>
+            <span class="srumpoint">Scrump Points:</span>
+            <button type="button" class="button_Color">1</button>
+
+        </div>
+        <div class="new_task">
+
+
+            <span> + NEW TASK </span>
+
+        </div>
 
     </div>
-
-
 
     <div class="colum">
         <div
@@ -80,33 +110,33 @@
             <span>PENDING</span>
             <span class="number_Style">2</span>
             <span style="float: right;">...</span>
-            <span style="float: right;">+</span>
+            <span style="float: right; color:green;">+</span>
         </div>
 
         <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
-            <span>Epic 2</span><br>
-            <span>Customer reqquest</span>
-            <span><span class="glyphicon glyphicon-flag"></span></span>
-            <span>8/22/19 - 8/30/19</span>
+            <span class="back_Epic">Epic 2</span><br>
+            <span>Customer reqquest</span><br>
+            <span><span class="glyphicon glyphicon-flag" style="color: red;"></span></span>
+            <span>8/22/19 - <span style="color: red;"> 8/30/19</span></span>
             <span><span class="glyphicon glyphicon-hourglass"></span> 4h </span><br>
-            <span>Scrump Points:</span>
+            <span class="srumpoint">Scrump Points:</span>
             <button type="button" class="button_Color">1</button>
 
         </div>
 
         <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
-            <span>Epic 2</span><br>
-            <span>Bug report</span>
-            <span><span class="glyphicon glyphicon-flag"></span></span>
+            <span class="back_Epic">Epic 2</span><br>
+            <span>Bug report</span><br>
+            <span class="glyphicon glyphicon-flag" style="color: yellow;"></span>
             <span> 8/22/19</span>
             <span><span class="glyphicon glyphicon-hourglass"></span> 6h </span><br>
-            <span>Scrump Points:</span>
+            <span class="srumpoint">Scrump Points:</span>
             <button type="button" class="button_Color">1</button>
 
         </div>
 
 
-        <div class="new_Task">
+        <div class="new_task">
 
 
             <span> + NEW TASK </span>
@@ -123,20 +153,32 @@
             <span>INPROGRESS</span>
             <span class="number_Style">2</span>
             <span style="float: right;">...</span>
-            <span style="float: right;">+</span>
+            <span style="float: right; color:blue">+</span>
         </div>
 
         <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
-            <span>Epic 2</span><br>
-            <span>User Story</span>
-            <span><span class="glyphicon glyphicon-flag"></span></span>
+            <span class="back_Epic">Epic 2</span><br>
+            <span>User Story</span><br>
+            <span class="glyphicon glyphicon-flag" style="color: yellow;"></span>
             <span> 8/26/19</span>
             <span><span class="glyphicon glyphicon-hourglass"></span> 24h </span>
             <span></span>
-            <span>Scrump Points:</span>
+            <span class="srumpoint">Scrump Points:</span>
             <button type="button" class="button_Color">3</button>
 
         </div>
+
+        <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
+            <span class="back_Epic">Epic 1</span><br>
+            <span>Redesign Frontend</span>
+            <span class="srumpoint">Scrump Points:</span>
+            <button type="button" class="button_Color">7</button>
+
+        </div>
+        <div class="new_task">
+            <span> + NEW TASK </span>
+        </div>
+
 
     </div>
 
@@ -148,20 +190,38 @@
             <span>REVIEW</span>
             <span class="number_Style">3</span>
             <span style="float: right;">...</span>
-            <span style="float: right;">+</span>
+            <span style="float: right; color:yellow">+</span>
         </div>
 
         <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
-            <span>Epic 1</span><br>
-            <span>Fix routing problems</span>
-            <span><span class="glyphicon glyphicon-flag"></span></span>
-            <span><span class="glyphicon glyphicon-hourglass"></span> 16h </span>
-            <span>New signup page</span>
-            <span>Scrump Points:</span>
+            <span class="back_Epic">Epic 1</span><br>
+            <span>New signup page</span><br>
+            <span class="srumpoint">Scrump Points:</span>
             <button type="button" class="button_Color">3</button>
 
         </div>
 
+        <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
+            <span class="back_Epic"> Epic1</span><br>
+            <span>Set up data warehouse</span>
+            <span class="srumpoint">Scrump Points:</span>
+            <button type="button" class="button_Color">7</button>
+
+        </div>
+
+        <div style="background-color:white; padding: 10px; box-shadow: 2px 2px 2px 2px grey; " class="common_div">
+            <span class="back_Epic">Epic 1</span><br>
+            <span>Refactor some code</span>
+            <span class="srumpoint">Scrump Points:</span>
+            <button type="button" class="button_Color">3</button>
+
+        </div>
+        <div class="new_task">
+
+
+            <span> + NEW TASK </span>
+
+        </div>
     </div>
     <div class="colum">
 
@@ -175,14 +235,10 @@
             <span style="float: right;">+</span>
         </div>
 
-        <div class="new_Task">
-
-
-            <span> + NEW TASK </span>
-
+        <div class="new_task">
+         <span> + NEW TASK </span>
         </div>
-
-    </div>
+</div>
 
 </body>
 
