@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.hero{
+
+       height: 100vh;
+       background-image: url("background.jpg");
+       background-position:center;
+       background-size: cover;
+       overflow-x: hidden;
+    position: relative;
+
+}
+.nav_bar
+{
+display:flex;
+padding:40px 120px;
+}
+.nav_links{
+
+        flex: 1;
+
+}
+.nav_links ul{
+margin-left:50px;
+display:inline;
+
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 25px;
+    
+}
+.nav_links ul a
+{
+color:#fff;
+text-decoration: none;
+font-size:13px;
+
+
+}
+.nav_links ul li::after{
+
+    content: "";
+    width:0%;
+    height:2px;
+    background: yellow;
+    margin:auto;
+    display: block;
+    transition:.5s;
+
+}
+
+.nav_links ul li:hover::after
+{
+ width:100%;
+
+}
+.btn1{
+
+    padding:10px 20px;
+    border:0;
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.nav_links .btn1{
+    float:right;
+}
+.baner_title{
+
+    margin: 80px 130px;
+    color:#fff;
+}
+.baner_title h1{
+font-size: 64px;
+margin-bottom: 30px;
+
+}
+.baner_title h1 span{
+    color:yellow;
+
+
+}
