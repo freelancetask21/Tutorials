@@ -3,16 +3,20 @@
 <head>
     <title>Food website design</title>
     <meta name="viewport" content="width = devicewidth, initial - scale = 1 ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="hero">
         <div class="nav_bar">
             <h1 style="color:gray;">Logo</h1>
-            <div class="nav_links">
+
+            <div class="nav_links" id="nav-links">
+                    <i class="fa fa-bars" ></i>
+                    <i class="fa fa-close" onclick="closeMenu()" ></i>
                 <ul>
                     <a href="#">
                         <li>HOME</li>
@@ -23,34 +27,66 @@
                     <a href="#">
                         <li>RECEIPE</li>
                     </a>
-
                 </ul>
                 <button type="button" class="btn1">SIGN UP</button>
-                </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
         </div>
-        <div class="baner_title"><h1>Food <span>Doesn't have a religion.</span> It is a religion.</h1>
-        <button type="button" class="btn1">EXPLORE</button>
+        <div class="baner_title">
+            <h1>Food <span>Doesn't have <br> a religion.</span> It is a religion.</h1>
+            <button type="button" class="btn1">EXPLORE</button>
         </div>
+
         <div>
-             <div class="vertica_bar">
-                    <i class="fas fa-list"></i>
-                    <i class="fas fa-search"></i>
-             </div>
-             <div class="social_icon">
-                    <i class="fas fa-facebook"></i>
-                    <i class="fas fa-instagram"></i>
-                    <i class="fas fa-twitter"></i>
-                    <i class="fas fa-pinterest"></i>
-                    
-             </div>
+            <div class="vertical_bar">
+                <div class="search_icon">
+                    <i class="fa fa-th-list"></i>
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <div class="social_icon">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-pinterest"></i>
+                      
+                </div>
+               
+            </div>
+        
+            <div class="notifications">
+
+                <div class="contents">
+                    <small> Subscribe Easy tutorials youtube Channeals
+                        and never miss any new videos.</small>
+                    <p><a href="#">PRE</a> <a href="#">NEXT</a></p>
+                </div>
+                <div class="notification-img"><img src="img1.jpg" style="width: 200px;"></h1></div>
+
+            </div>
+
         </div>
-
-
-    </div>
-
-
+ </div>
 
 </body>
+<script>
+
+   var show = document.getElementById("nav-links")
+   function showMenu()
+   {
+       console.log(show)
+    show.style.right = "0";
+    
+}
+
+function closeMenu()
+   {
+    console.log(show)
+    show.style.right = "-200px";
+}
+
+</script>
 
 
 </html>

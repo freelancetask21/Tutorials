@@ -21,11 +21,13 @@ padding:40px 120px;
 .nav_links{
 
         flex: 1;
+        position: relative;
+        right: 0;
 
 }
 .nav_links ul{
-margin-left:50px;
-display:inline;
+    margin-left:50px;
+    display:inline;
 
 }
 .nav_links ul li{
@@ -39,9 +41,8 @@ display:inline;
 color:#fff;
 text-decoration: none;
 font-size:13px;
-
-
 }
+
 .nav_links ul li::after{
 
     content: "";
@@ -50,7 +51,7 @@ font-size:13px;
     background: yellow;
     margin:auto;
     display: block;
-    transition:.5s;
+    transition:.5s; 
 
 }
 
@@ -66,13 +67,11 @@ font-size:13px;
     background: yellow;
     font-weight: bold;
     cursor: pointer;
-
 }
 .nav_links .btn1{
     float:right;
 }
 .baner_title{
-
     margin: 80px 130px;
     color:#fff;
 }
@@ -83,6 +82,175 @@ margin-bottom: 30px;
 }
 .baner_title h1 span{
     color:yellow;
+}
+.vertical_bar
+{
+    height: 100%;
+    background: #000;
+    top:0;
+    left:0;
+    position: absolute;
+}
+.search_icon{
 
+height: 60%;
+width: 80px;
+}
+.search_icon .fa{
+    margin: 45px 23px;
+    display: block;
+    color:#fff;
+    font-size:30px;
+     cursor: pointer;
+    }
+
+    
+    .social_icon
+    {
+        height: 35%; 
+        width: 80px;
+        background: red; 
+        text-align: center;
+        padding-top: 27%;
+        bottom:0;
+        position:absolute;
+    
+     }
+     .social_icon .fa
+     {
+        margin:15px 23px;
+        display: block;
+        padding:8px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        cursor: pointer;
+
+    }
+    .notifications
+    {
+        display: flex;
+        width: 400px;
+        margin: 10px;
+        padding: 35px;
+        right:0;
+        bottom:0;
+        background: yellow;
+        position: absolute;
+        align-items: center;
+}
+.contents
+{
+flex-basis: 50%;
+padding: 10px;
+}
+.notification-img
+{
+
+    flex-basis: 50%;
+    
+}
+.notification-img h1{
+
+    width: 100%;
+ }
+
+.contents a{
+
+    text-decoration:none ;
+    color: #000;
+    font-size: 13px;
+    margin: 0 10px;
 
 }
+.contents p{
+
+    text-align: right;
+    margin-top: 10px;
+}
+.notification-img img{
+    width:200px;
+    height: 200px;
+}
+
+
+
+
+@media (max-width:700px){
+
+    .vertical_bar{display: none;}
+
+
+.baner_title{
+
+margin: 80px 40px;
+
+}
+.baner_title h1{
+ 
+    font-size: 50px;
+}
+
+.notifications{
+    width:100%;
+}
+.nav_bar{
+
+    padding: 10px 30px;
+}
+
+.nav_bar .fa{
+
+    display: block;
+    color: #fff;
+    margin: 10px 25px;
+    font-size: 22px;
+    cursor: pointer;     
+}
+
+.nav_links{
+
+    height: 100vh;
+    width: 200px;
+    background-color:0000 ;
+    top:0;
+    right: -200px;
+    position: absolute;
+    text-align: left;
+    z-index:2px ;
+    transition: 0.5se;
+
+}
+.nav_links ul a{
+display: block;
+
+}
+.nav_links .btn1{
+float: none;
+margin-left: 25px;
+margin-top: 10px;
+
+}
+
+
+.fa-bars{position: absolute;
+
+right: 20px;
+top:10px;
+}
+ 
+.fa-bars{
+position: absolute   ;
+display: block;
+color: #fff;
+margin: 10px 25px;
+font-size: 22px;
+cursor: pointer;
+
+}
+
+}
+
+
+
+
+
